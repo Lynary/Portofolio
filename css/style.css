@@ -1,0 +1,86 @@
+/* nav */
+.navbar {
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.navbar-brand {
+  font-family: Livvic;
+  letter-spacing: 3px;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #5bc7f5;
+  width: 0%;
+  opacity: 0;
+  padding-bottom: 3px;
+  margin-bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #5bc7f5;
+  width: 75%;
+  opacity: 1;
+  padding-bottom: 3px;
+  margin-bottom: -5px;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  background-color: #ebebeb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.jumbotron img {
+  width: 20%;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 3px #acacac;
+}
+
+.jumbotron h1 {
+  font-family: Livvic;
+  letter-spacing: 10px;
+}
+
+body {
+  min-height: 2000px;
+}
+
+section h2 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+hr {
+  border: 1px solid rgb(3, 3, 3);
+  width: 100px;
+  margin: auto;
+}
+
+.pendidikan img {
+  width: 200px;
+}
+
+.pendidikan {
+  background-color: #ebebeb;
+  min-height: 500px;
+}
+
+@media (max-width: 767.98px) {
+  .jumbotron img {
+    width: 30%;
+  }
+  .nav-link.nav-link:hover::after {
+    width: 25%;
+  }
+}
